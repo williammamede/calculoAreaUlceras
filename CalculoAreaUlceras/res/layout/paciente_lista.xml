@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewIconPaciente"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+         android:layout_marginTop="2dp"
+        android:src="@drawable/patient_chart" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewNomePaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="AQUI VAI O NOME DO ZE" />
+
+        <TextView
+            android:id="@+id/textViewNumeroFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewNomePaciente"
+            android:layout_below="@+id/textViewNomePaciente"
+            android:text="99" />
+
+    </RelativeLayout>
+
+</LinearLayout>

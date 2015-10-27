@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.calculoareaulceras.CadastroUserActivity" >
+    
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelErrorCad"
+        android:textColor="@android:color/holo_red_dark" />
+    <TextView
+        android:id="@+id/textViewNomeMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/errorMsg"
+        android:layout_alignStart="@+id/errorMsg"
+        android:layout_below="@+id/errorMsg"
+        android:text="@string/labelNome" />
+
+    <EditText
+        android:id="@+id/editTextNomeMedico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNomeMedico"
+        android:layout_alignStart="@+id/textViewNomeMedico"
+        android:layout_below="@+id/textViewNomeMedico"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewEmailMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNomeMedico"
+        android:text="@string/labelEmail" />
+
+    <EditText
+        android:id="@+id/editTextEmailMedico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewEmailMedico"
+        android:layout_alignStart="@+id/textViewEmailMedico"
+        android:layout_below="@+id/textViewEmailMedico"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/loginMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmailMedico"
+        android:text="@string/labelLogin" />
+
+    <EditText
+        android:id="@+id/editTextLoginMedico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginMedico"
+        android:layout_alignStart="@+id/loginMedico"
+        android:layout_below="@+id/loginMedico"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/senhaMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextLoginMedico"
+        android:layout_alignStart="@+id/editTextLoginMedico"
+        android:layout_below="@+id/editTextLoginMedico"
+        android:text="@string/labelSenha" />
+
+    <EditText
+        android:id="@+id/editTextSenhaMedico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/senhaMedico"
+        android:layout_alignStart="@+id/senhaMedico"
+        android:layout_below="@+id/senhaMedico"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewTelefoneMedico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSenhaMedico"
+        android:text="@string/labelTelefone" />
+
+    <EditText
+        android:id="@+id/editTextTelefoneMedico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTelefoneMedico"
+        android:layout_alignStart="@+id/textViewTelefoneMedico"
+        android:layout_below="@+id/textViewTelefoneMedico"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:id="@+id/centerShim"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnSalvarMedico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/centerShim"
+        android:layout_toStartOf="@+id/centerShim"
+        android:layout_below="@+id/editTextTelefoneMedico"
+        android:text="@string/labelSalvar" />
+
+    <Button
+        android:id="@+id/btnCancelarCad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/btnSalvarMedico"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/centerShim"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_below="@+id/editTextTelefoneMedico"
+        android:text="@string/labelCancelar" />
+
+</RelativeLayout>

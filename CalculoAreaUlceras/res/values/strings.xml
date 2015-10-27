@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ulceras</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_sair">Sair</string>
+    <string name="labelLogin">Login</string>
+    <string name="labelNome">Nome</string>
+    <string name="labelSenha">Senha</string>
+    <string name="labelSalvar">Salvar</string>
+    <string name="labelCancelar">Cancelar</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelTelefone">Telefone</string>
+    <string name="labelEntrar">Entrar</string>
+    <string name="labelError">Entre com os dados de login corretamente</string>
+    <string name="labelErrorCad">Entre com os dados corretamente</string>
+    <string name="title_activity_logged">Cálculo de área de ulceras</string>
+    <string name="labelPacientes">Pacientes Cadastrados</string>
+    <string name="labelCompartilhar">Compartilhar dados</string>
+    <string name="erro_ws">Erro na conexão com o WebService</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="title_activity_cadastro">Cadastro de Paciente</string>
+    <string name="title_activity_paciente">Paciente</string>
+    <string name="remover">Remover</string>
+    <string name="editar">Editar</string>
+    <string name="title_activity_cadastro_user">Cadastro</string>
+    <string name="search_title">Buscar</string>
+
+</resources>
